@@ -1,0 +1,21 @@
+function myFunction(){
+  const feed = document.getElementById("feed");
+  const x = document.getElementById("post-message")
+  // Create a new post and add it to the feed
+  const post = document.createElement("div");
+  post.classList.add("post");
+  post.innerHTML = `<p>${x.value}</p>`;
+  post.style.border = 'solid 1px #ccc';
+  post.style.marginBottom = '5px';
+  post.style.padding = '5px'
+  post.style.marginLeft = '5px';
+  feed.prepend(post);
+  
+  x.value = "";
+  feed.value = "";
+  }
+  
+  
+  // document.addEventListener("DOMContentLoaded", () => {
+  // });
+  // const input_1 = document.getElementById('');
